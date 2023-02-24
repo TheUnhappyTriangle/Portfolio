@@ -1,0 +1,26 @@
+[
+    {
+        "Title":"Portfolio Site",
+        "Description":"Here is the jquery I used to put the text on this page!",
+        "Image":"images/project/portfolio.jpg",
+        "Link":"https://github.com/TheUnhappyTriangle/Portfolio"
+    },
+    {
+        "Title":"Snake In C",
+        "Description":"This is the game Snake in C",
+        "Image":"images/project/snake.gif",
+        "Link":"https://github.com/TheUnhappyTriangle/355-snake"
+    },
+    {
+        "Title":"Java Game",
+        "Description":"This is a game made in Java",
+        "Image":"images/project/javaGame.gif",
+        "Link":"https://github.com/CCSU-DesignPatterns-F20/final-project-team-5"
+    },
+    {
+        "Title":"News Site",
+        "Description":"This news site was made with Django",
+        "Image":"images/project/newsSite.jpg",
+        "Link":"https://github.com/GabrielAnton21/NewsApp"
+    }
+]
