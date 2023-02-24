@@ -7,8 +7,8 @@
 $(document).ready(function() {
     $('#project-container').on('click', '.button', function() {
         const btnText = $(this).text();
-        
-        $.getJSON("/files/PageContent.json", function(data) {
+        console.log("Btn clicked");
+        $.getJSON("files/PageContent.json", function(data) {
             let contentJSON = data; 
             console.log(data);
             let index = 0;
