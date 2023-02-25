@@ -1,9 +1,3 @@
-/*
-    This script changes the content of generic.html
-    Adam Kachidurian
-    02-23-2023
-*/
-
 $(document).ready(function() {
     $('#project-container').on('click', '.button', function() {
         const btnText = $(this).text();
