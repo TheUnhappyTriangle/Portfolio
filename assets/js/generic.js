@@ -1,41 +1,39 @@
-function pageChange(title, desc, img, link) {
+function pageChange(title, desc, img, alt, link, showlink) {
     console.log("getPageContent function was called");
     $('.proj-title').text(title);
     $('.proj-desc').text(desc);
     $('.proj-img').attr('src', img);
+    $('.proj-img').attr('alt', alt);
     $('.proj-link').attr('href', link);
+    if (!showlink) { $('.proj-link').hide(); }
 }
 
-function getPageContent(index) {
+function getPageContent(projIdx) {
     console.log("getPageContent function was called");
     $.getJSON('files/PageContent.json', function(data){
-        pageChange(data[index].Title, data[index].Description, data[index].Image, data[index].Link);
+        pageChange( data[projIdx].Title, data[projIdx].Description, data[projIdx].Image, data[projIdx].ImageAlt,
+                    data[projIdx].Link, data[projIdx].ShowLink);
     });
 }
 
 $(document).ready(function() {
-    let projKey = localStorage.getItem('btnText');
-    let jsonIndex = 0;
-    console.log("generic.js ready with: "+projKey);
-
-    switch (projKey)
+    let path = window.location.pathname;
+    switch (path)
     {
         // Website
-        case 'This Site':
-            jsonIndex = 0;
+        case '/this-site':
+            getPageContent(1);
             break;
 
         // School
-        case 'Snake in C':
-            jsonIndex = 1;
+        case '/C-snake':
+            getPageContent(1);
             break;
-        case 'Java Game':
-            jsonIndex = 2;
+        case '/java-game':
+            getPageContent(2);
             break;
-        case 'News Site':
-            jsonIndex = 3;
+        case '/news-app':
+            getPageContent(3);
             break;
     }
-
-    getPageContent(jsonIndex);
 });

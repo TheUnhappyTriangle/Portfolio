@@ -3,24 +3,32 @@
         "Title":"Portfolio Site",
         "Description":"Here is the jquery I used to put the text on this page!",
         "Image":"images/project/portfolio.jpg",
-        "Link":"https://github.com/TheUnhappyTriangle/Portfolio"
+        "ImageAlt":"An image of the js script for this page.",
+        "Link":"https://github.com/TheUnhappyTriangle/Portfolio",
+        "ShowLink": true
     },
     {
         "Title":"Snake In C",
         "Description":"This is the game Snake in C",
         "Image":"images/project/snake.gif",
-        "Link":"https://github.com/TheUnhappyTriangle/355-snake/tree/dev"
+        "ImageAlt":"Animated gif of the snake game.",
+        "Link":"https://github.com/TheUnhappyTriangle/355-snake/tree/dev",
+        "ShowLink": true
     },
     {
         "Title":"Java Game",
         "Description":"This is a game made in Java",
         "Image":"images/project/javaGame.gif",
-        "Link":"https://github.com/CCSU-DesignPatterns-F20/final-project-team-5"
+        "ImageAlt":"Animated gif of the shooter game.",
+        "Link":"https://github.com/CCSU-DesignPatterns-F20/final-project-team-5",
+        "ShowLink": false
     },
     {
         "Title":"News Site",
         "Description":"This news site was made with Django",
         "Image":"images/project/newsSite.jpg",
-        "Link":"https://github.com/GabrielAnton21/NewsApp"
+        "ImageAlt":"Image of the news app",
+        "Link":"https://github.com/GabrielAnton21/NewsApp",
+        "ShowLink": true
     }
 ]
