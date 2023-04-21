@@ -1,0 +1,112 @@
+[
+      {
+        "section_intro": {
+          "header": "Hi, I'm Adam",
+          "description": "As an avid learner, I am constantly exploring the possibilities of computer programming and am passionate about creating with code. With a solid foundation in programming and software development skills acquired through my education, I have gained experience writing a diverse range of scripts and classes. From managing collisions in a video game to automating tasks by renaming every file in a folder, I have tackled a variety of challenges. Even in my professional roles in IT and Technical Support, I leveraged my programming knowledge to create functional web pages and automate workflows. I am confident that the following projects I have worked on showcase the depth and variety of my programming expertise.",
+          "image": "assets/images/home/old pic.jpg"
+        }
+      },
+      {
+        "section_one": {
+          "project_categories": [
+            {
+              "title": "This Site & Its Apps",
+              "description": "",
+              "projects": [
+                {
+                  "title": "This Site",
+                  "url": "Projects/Web/This-Site"
+                },
+                {
+                  "title": "Monster Team Planner",
+                  "url": "Projects/Web/Team-Planner"
+                }
+              ],
+              "image": "assets/images/pic01.jpg"
+            },
+            {
+              "title": "School Projects",
+              "description": "Some old college projects I made with classmates years ago.",
+              "projects": [
+                {
+                  "title": "Snake in C",
+                  "url": "Projects/School/C-Snake"
+                },
+                {
+                  "title": "Java Game",
+                  "url": "Projects/School/Java-Game"
+                },
+                {
+                  "title": "News Site",
+                  "url": "Projects/School/News-App"
+                }
+              ],
+              "image": "assets/images/pic02.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "section_two": {
+            "title": "My Skills",
+            "description": "While the projects above might help display some of my skills, here is a more comprehensive list of some important ones.",
+            "skills": [
+                {
+                    "icon": "icon solid major fa-code",
+                    "header": "Proficient in Programming",
+                    "description": "I am able to pick up new languages quickly, I frequently use C#, and I am experienced in many other languages as well."
+                },
+                {
+                    "icon": "icon solid major fa-lock",
+                    "header": "Version Control and Documentation",
+                    "description": "Keeping code organized and documented keeps me sane and allows me to pick up projects after months of not working on them."
+                },
+                {
+                    "icon": "icon solid major fa-cog",
+                    "header": "Team Player",
+                    "description": "I am flexible about my role and responsibilities, great with communication and taking initiative, and always encourage my teammates."
+                },
+                {
+                    "icon": "icon solid major fa-desktop",
+                    "header": "Cloud and Database",
+                    "description": "I have experience with AWS, Oracle, Mongo DB, and SQL Server."
+                },
+                {
+                    "icon": "icon solid major fa-link",
+                    "header": "Analysis and Problem Solving",
+                    "description": ""
+                },
+                {
+                    "icon": "icon major fa-gem",
+                    "header": "Great Work Ethic",
+                    "description": ""
+                }
+            ],
+            "buttons": [
+                {
+                    "text": "My Resume (PDF)",
+                    "link": "assets/files/current_resume.pdf"
+                }
+            ]
+        }
+      },
+      {
+        "section_three": {
+            "header": "Contact Me",
+            "email": "akachidurian@gmail.com",
+            "social_media": [
+                {
+                    "icon": "icon brands fa-github",
+                    "link": "https://github.com/TheUnhappyTriangle",
+                    "name": "GitHub"
+                },
+                {
+                    "icon": "icon brands fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/adam-kachidurian-a005581b6/",
+                    "name": "LinkedIn"
+                }
+            ]
+          }
+      }
+    ]
+  
