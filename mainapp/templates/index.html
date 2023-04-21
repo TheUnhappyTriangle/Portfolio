@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Adam Kachidurian's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="{% static 'assets/js/index.js' %}"></script>
+		<noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Projects</a></li>
+							<li><a href="#two">Skills</a></li>
+							<li><a href="#three">Contact Me</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<div class="container">
+								<div class="row">
+									<div class="col-7">
+										<h1 class="text-lg-right">{{ homepage_content.section_intro.header }}</h1>
+										<p style="font-size: 20px; text-align: justify;">
+											{{ homepage_content.section_intro.description }}
+										</p>
+									</div>
+									<div class="col-5">
+										<a href="#" class="image"><img src="{% static homepage_content.section_intro.image %}" style="max-width: 100%; display: flex; justify-content: center; align-items: center;" alt="pic of me" data-position="center center"/></a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<ul class="actions">
+											<li><a href="#one" class="button scrolly">Scroll</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- One -->
+				<div id="project-container">
+					<section id="one" class="wrapper style2 spotlights">
+						{% for category in homepage_content.section_one.project_categories %}
+						<section>
+							<a href="#" class="image"><img src="{% static category.image %}" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>{{ category.title }}</h2>
+									<p>{{ category.description }}</p>
+									<ul class="actions">
+										{% for project in category.projects %}
+											<li><a href="{{ project.url }}" class="button">{{ project.title }}</a></li>
+										{% endfor %}
+									</ul>
+								</div>
+							</div>
+						</section>
+						{% endfor %}
+					</section>
+					</div>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>{{ homepage_content.section_two.title }}</h2>
+							<p>{{ homepage_content.section_two.description }}</p>
+							<div class="features">
+								{% for skill in homepage_content.section_two.skills %}
+									<section>
+										<span class="{{ skill.icon }}"></span>
+										<h3>{{ skill.header }}</h3>
+										<p>{{ skill.description }}</p>
+									</section>
+								{% endfor %}
+							</div>
+							<ul class="actions">
+								{% for button in homepage_content.section_two.buttons %}
+									<li><a href="{% static button.link %}" target="_blank" class="button">{{ button.text }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>{{ homepage_content.section_three.header }}</h2>
+							<div class="split style1">
+								<section>
+									<ul class="contact">
+										<a href="mailto:{{ homepage_content.section_three.email }}">{{ homepage_content.section_three.email }}</a>
+										<ul class="icons">
+											{% for social in homepage_content.section_three.social_media %}
+												<li><a href="{{ social.link }}" target="_blank" class="{{ social.icon }}"><span class="label">{{ social.name }}</span></a></li>
+											{% endfor %}
+										</ul>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
+</html>
