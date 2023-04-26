@@ -3,7 +3,6 @@ import json
 from django.shortcuts import render
 from django.http import Http404
 
-# Create your views here.
 def home(request):
     json_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'assets', 'json', 'HomePage.json')
 
@@ -20,7 +19,6 @@ def home(request):
     return render(request, 'index.html', {'homepage_content': homepage_content})
 
 def project(request, Category, urlName):
-    # Get the absolute path to the JSON file
     json_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'assets', 'json', 'PageContent.json')
     
     with open(json_path) as f:
@@ -36,3 +34,6 @@ def project(request, Category, urlName):
         raise Http404('That project was not found.')
     
     return render(request, 'project.html', {'page_content': page_content})
+
+
+

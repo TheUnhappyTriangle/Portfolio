@@ -10,16 +10,12 @@
         "section_one": {
           "project_categories": [
             {
-              "title": "This Site & Its Apps",
+              "title": "Web Apps",
               "description": "",
               "projects": [
                 {
                   "title": "This Site",
                   "url": "Projects/Web/This-Site"
-                },
-                {
-                  "title": "Monster Team Planner",
-                  "url": "Projects/Web/Team-Planner"
                 }
               ],
               "image": "assets/images/pic01.jpg"
@@ -108,5 +104,5 @@
             ]
           }
       }
-]
+    ]
   

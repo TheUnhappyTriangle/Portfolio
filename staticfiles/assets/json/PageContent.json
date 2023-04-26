@@ -2,39 +2,49 @@
     {
         "Title":"Portfolio Site",
         "Category": "Web",
-        "urlName": "ThisSite",
-        "Description":"Here is the code I wrote to make this all work!",
-        "Image":"images/project/portfolio.jpg",
-        "ImageAlt":"An image of the js script for this page.",
+        "urlName": "This-Site",
+        "Description":"This is my first time working solo on a Django project, and it has really opened the door to python for me. Since starting this project, I have been in love with writing little python scripts for auxiliary support on other projects which I hope to host here soon. Above is the python function that puts the content on this page!",
+        "Image":"/static/assets/images/proj/projFunction.png",
+        "ImageAlt":"An image of the view.py project functions",
         "Link":"https://github.com/TheUnhappyTriangle/Portfolio",
         "ShowLink": true
+
     },
     {
         "Title":"Snake In C",
         "Category": "School",
         "urlName": "C-Snake",
-        "Description":"This is the game Snake in C, which I made with a partner for a Systems Programming class assignment.",
-        "Image":"images/project/snake.gif",
+        "Description":"This is the game Snake made with C, which I made with a partner for a Systems Programming class assignment. The snake is made up of consecutive letter o's and is controlled by pressing WASD keys or the arrow keys. Numbers from 1-9 will appear on screen in random locations. When the head of the snake collides with the number, the snake grows by that number of o's. The player wins the game when the snake is as long as half the length of the perimeter of the console window. If the snake collides with itself or the walls of the perimeter, the game ends in a loss.",
+        "Images": [
+            "/static/assets/images/proj/CSnake_01.gif",
+            "/static/assets/images/proj/CSnake_02.gif",
+            "/static/assets/images/proj/CSnake_03.gif"
+        ],
         "ImageAlt":"Animated gif of the snake game.",
         "Link":"https://github.com/TheUnhappyTriangle/355-snake/tree/dev",
         "ShowLink": true
+
     },
     {
         "Title":"Java Game",
         "Category": "School",
         "urlName": "Java-Game",
-        "Description":"This is a game made in Java by a team of four students including myself. There was some code I wrote for the 'enemy' shapes that didn't make the cut for the final deadline. However, I did write the score system as can be seen in the singleton above.",
-        "Image":"images/project/javaGame.gif",
-        "ImageAlt":"Animated gif of the shooter game.",
+        "Description":"This page needs more content. But for now, this is the UML for a game made in Java by a team of four students including myself. I wrote the code for the enemy units and also the score keeping system. The repository is set to private, but I am working on a way to display the code or allow the game to be played publicly.",
+        "Image":"/static/assets/images/proj/JShooterUML.png",
+        "ImageAlt":"UML for the shooter game.",
         "Link":"https://github.com/CCSU-DesignPatterns-F20/final-project-team-5",
         "ShowLink": false
     },
     {
         "Title":"News Site",
         "Category": "School",
-        "urlName": "NewsApp",
-        "Description":"This news site was made with Django. While I primarily worked on the HTML and CSS on this project, I did know about and work on the python with my project partner.",
-        "Image":"images/project/newsSite.jpg",
+        "urlName": "News-App",
+        "Description": "This was a News App created by myself and a partner for our Web Programming Final Project. We needed to create a website that made calls to an API and required users to register and log in. We also needed to show our understanding of HTML, CSS, and Django. Once the user is logged in, they can type whatever they want into the search bar and hit enter to make a call to <a href=\"https://newsapi.org/\">News API</a> to receive news articles from all over the web relating to their topic.",
+        "Images": [
+            "/static/assets/images/proj/NewsSiteClips_01.gif",
+            "/static/assets/images/proj/NewsSiteClips_02.gif",
+            "/static/assets/images/proj/NewsSiteClips_03.gif"
+        ],
         "ImageAlt":"Image of the news app",
         "Link":"https://github.com/GabrielAnton21/NewsApp",
         "ShowLink": true
