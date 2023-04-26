@@ -10,9 +10,12 @@
 		<title>{{ page_content.Title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+		<!-- Bootstrap JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<!--<script src="assets/js/generic.js"></script>-->
 		<noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -30,17 +33,43 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">{{ page_content.Title }}</h1>
-							<span class="image fit"><img src="{{ page_content.Image }}" alt="{{ page_content.ImageAlt }}"/></span>
+							<div class="container">
+								<div class="row">
+									<div class="col"></div>
+								</div>
+								<div class="row">
+									<div class="col"></div>
+								</div>
+							</div>
+							{% if page_content.Image %}
+								<span class="image fit"><img src="{{ page_content.Image }}" alt="{{ page_content.ImageAlt }}"/></span>
+							{% elif page_content.Images %}
+								<div id="imgCarousel" class="carousel slide">
+									<div class="carousel-inner">
+										{% for img_src in page_content.Images %}
+											<div class="carousel-item text-center {% if forloop.first %} active {% endif %}">
+												<img class="mx-auto" src="{{ img_src }}" alt="{{ img_src }}" style="width: 68%;">
+											</div>
+										{% endfor %}
+									</div>
+									<button class="carousel-control-prev my-auto" type="button" data-bs-target="#imgCarousel" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									    <span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next my-auto" type="button" data-bs-target="#imgCarousel" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									    <span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							{% endif %}
 							<p>{{ page_content.Description }}</p>
 							<p><a href="{{ page_content.Link }}" target="_blank">Click here to check out the repository.</a></p>
 						</div>
 					</section>
-
 			</div>
 
 		<!-- Footer -->

@@ -3,9 +3,9 @@
         "Title":"Portfolio Site",
         "Category": "Web",
         "urlName": "This-Site",
-        "Description":"Here is the code I wrote to make this all work!",
-        "Image":"images/project/portfolio.jpg",
-        "ImageAlt":"An image of the js script for this page.",
+        "Description":"This is my second big project using Django, and it has really opened the door to python for me. Since starting this project, I have been in love with the language.",
+        "Image":"/static/assets/images/proj/projFunction.png",
+        "ImageAlt":"An image of the view.py",
         "Link":"https://github.com/TheUnhappyTriangle/Portfolio",
         "ShowLink": true
     },
@@ -14,7 +14,7 @@
         "Category": "School",
         "urlName": "C-Snake",
         "Description":"This is the game Snake in C, which I made with a partner for a Systems Programming class assignment.",
-        "Image":"images/project/snake.gif",
+        "Image":"/static/assets/images/project/snake.gif",
         "ImageAlt":"Animated gif of the snake game.",
         "Link":"https://github.com/TheUnhappyTriangle/355-snake/tree/dev",
         "ShowLink": true
@@ -24,7 +24,7 @@
         "Category": "School",
         "urlName": "Java-Game",
         "Description":"This is a game made in Java by a team of four students including myself. There was some code I wrote for the 'enemy' shapes that didn't make the cut for the final deadline. However, I did write the score system as can be seen in the singleton above.",
-        "Image":"images/project/javaGame.gif",
+        "Image":"/static/assets/images/project/javaGame.gif",
         "ImageAlt":"Animated gif of the shooter game.",
         "Link":"https://github.com/CCSU-DesignPatterns-F20/final-project-team-5",
         "ShowLink": false
@@ -34,7 +34,11 @@
         "Category": "School",
         "urlName": "News-App",
         "Description":"This news site was made with Django. While I primarily worked on the HTML and CSS on this project, I did know about and work on the python with my project partner.",
-        "Image":"images/project/newsSite.jpg",
+        "Images": [
+            "/static/assets/images/proj/NewsSiteClips_01.gif",
+            "/static/assets/images/proj/NewsSiteClips_02.gif",
+            "/static/assets/images/proj/NewsSiteClips_03.gif"
+        ],
         "ImageAlt":"Image of the news app",
         "Link":"https://github.com/GabrielAnton21/NewsApp",
         "ShowLink": true
