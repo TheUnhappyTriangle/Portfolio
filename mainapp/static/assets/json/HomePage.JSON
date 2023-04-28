@@ -10,19 +10,19 @@
         "section_one": {
           "project_categories": [
             {
-              "title": "Web Apps",
-              "description": "",
+              "title": "Web App(s)",
+              "description": "I am working on one other app that will be linked here but for now it is just my portfolio.",
               "projects": [
                 {
                   "title": "This Site",
                   "url": "Projects/Web/This-Site"
                 }
               ],
-              "image": "assets/images/pic01.jpg"
+              "image": "assets/images/pic01.png"
             },
             {
               "title": "School Projects",
-              "description": "Some old college projects I made with classmates years ago.",
+              "description": "Three team projects from college.",
               "projects": [
                 {
                   "title": "Snake in C",
@@ -37,7 +37,18 @@
                   "url": "Projects/School/News-App"
                 }
               ],
-              "image": "assets/images/pic02.jpg"
+              "image": "assets/images/pic02.png"
+            },
+            {
+              "title": "Personal Projects",
+              "description": "A game I have been working on and eventually other helpful scripts.",
+              "projects": [
+                {
+                  "title": "2D Unity RPG (WIP)",
+                  "url": "Projects/Games/Mythrimoire"
+                }
+              ],
+              "image": "assets/images/pic03.png"
             }
           ]
         }
@@ -65,17 +76,17 @@
                 {
                     "icon": "icon solid major fa-desktop",
                     "header": "Cloud and Database",
-                    "description": "I have experience with AWS, Oracle, Mongo DB, and SQL Server."
+                    "description": "I have experience with AWS, Oracle Cloud, Mongo DB, and SQL Server."
                 },
                 {
                     "icon": "icon solid major fa-link",
                     "header": "Analysis and Problem Solving",
-                    "description": ""
+                    "description": "I have a strong analytical mindset and a passion for problem solving. I am able to break down complex problems and approach them systematically with a variety of tools and techniques to arrive at effective solutions."
                 },
                 {
                     "icon": "icon major fa-gem",
                     "header": "Great Work Ethic",
-                    "description": ""
+                    "description": "I am passionate about achieving my goals and consistently delivering quality results. I am dedicated, responsible, and strive to be a reliable team member who others can count on."
                 }
             ],
             "buttons": [

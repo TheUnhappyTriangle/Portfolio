@@ -1,9 +1,20 @@
 [
     {
         "Title":"Portfolio Site",
+        "Year": 2023,
         "Category": "Web",
         "urlName": "This-Site",
         "Description":"This is my first time working solo on a Django project, and it has really opened the door to python for me. Since starting this project, I have been in love with writing little python scripts for auxiliary support on other projects which I hope to host here soon. Above is the python function that puts the content on this page!",
+        "LangAndTech": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "JSON",
+            "Python",
+            "Django",
+            "PythonAnywhere"
+        ],
         "Image":"/static/assets/images/proj/projFunction.png",
         "ImageAlt":"An image of the view.py project functions",
         "Link":"https://github.com/TheUnhappyTriangle/Portfolio",
@@ -15,6 +26,9 @@
         "Category": "School",
         "urlName": "C-Snake",
         "Description":"This is the game Snake made with C, which I made with a partner for a Systems Programming class assignment. The snake is made up of consecutive letter o's and is controlled by pressing WASD keys or the arrow keys. Numbers from 1-9 will appear on screen in random locations. When the head of the snake collides with the number, the snake grows by that number of o's. The player wins the game when the snake is as long as half the length of the perimeter of the console window. If the snake collides with itself or the walls of the perimeter, the game ends in a loss.",
+        "LangAndTech": [
+            "C"
+        ],
         "Images": [
             "/static/assets/images/proj/CSnake_01.gif",
             "/static/assets/images/proj/CSnake_02.gif",
@@ -30,6 +44,9 @@
         "Category": "School",
         "urlName": "Java-Game",
         "Description":"This page needs more content. But for now, this is the UML for a game made in Java by a team of four students including myself. I wrote the code for the enemy units and also the score keeping system. The repository is set to private, but I am working on a way to display the code or allow the game to be played publicly.",
+        "LangAndTech": [
+            "Java"
+        ],
         "Image":"/static/assets/images/proj/JShooterUML.png",
         "ImageAlt":"UML for the shooter game.",
         "Link":"https://github.com/CCSU-DesignPatterns-F20/final-project-team-5",
@@ -40,6 +57,16 @@
         "Category": "School",
         "urlName": "News-App",
         "Description": "This was a News App created by myself and a partner for our Web Programming Final Project. We needed to create a website that made calls to an API and required users to register and log in. We also needed to show our understanding of HTML, CSS, and Django. Once the user is logged in, they can type whatever they want into the search bar and hit enter to make a call to <a href=\"https://newsapi.org/\">News API</a> to receive news articles from all over the web relating to their topic.",
+        "LangAndTech": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "JSON",
+            "Python",
+            "Django",
+            "PythonAnywhere"
+        ],
         "Images": [
             "/static/assets/images/proj/NewsSiteClips_01.gif",
             "/static/assets/images/proj/NewsSiteClips_02.gif",
@@ -48,5 +75,23 @@
         "ImageAlt":"Image of the news app",
         "Link":"https://github.com/GabrielAnton21/NewsApp",
         "ShowLink": true
+    },
+    {
+        "Title":"Mythrimoire",
+        "Category": "Games",
+        "urlName": "Mythrimoire",
+        "Description": "This the the \"dream\" game I have wanted to makes since I was young. Four years old playing pretend young, although I didn't know at the time I wanted to turn my imaginary friends A.K.A. \"Battle Monsters\" (read: Fakemon?) into a video game. While this is very much an ongoing work in progress, I have a basic movement system and enemy AI, as well as a nice sliding pause menu. I have so many more classes/features written but not implemented. I'm sure this is what development hell is.",
+        "LangAndTech": [
+            "C#",
+            "JSON",
+            "Unity"
+        ],
+        "Images": [
+            "/static/assets/images/proj/MM_01.gif",
+            "/static/assets/images/proj/MM_02.gif"
+        ],
+        "ImageAlt":"Image of Mythrimoire",
+        "Link":"",
+        "ShowLink": false
     }
 ]
